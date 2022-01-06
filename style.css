@@ -1,0 +1,24 @@
+#runButton {
+  border-radius: 10px;
+	position: relative;
+	padding: 10px;
+	border: 0px;
+	background-color: #3bde28;
+}
+
+#text {
+	border: 2px solid black;
+  border-radius: 10px;
+	position: relative;
+	margin: 5px;
+	margin-bottom: auto;
+}
+
+#blank {
+	border: 2px solid black;
+  border-radius: 10px;
+  position: absolute;
+	margin: 5px;
+	margin-bottom: auto;
+  width: 200px;
+}
