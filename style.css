@@ -52,13 +52,9 @@
 	position: relative;
 	margin: 5px;
 	margin-bottom: auto;
+	transition: padding 2s;
 }
 
-#blank {
-	border: 2px solid black;
-  border-radius: 10px;
-  position: absolute;
-	margin: 5px;
-	margin-bottom: auto;
-  width: 200px;
+#textarea:hover {
+	padding: 10px;
 }
