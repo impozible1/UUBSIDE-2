@@ -1,33 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-    <meta charset="utf-8">
-	  <link rel="icon" type="image/x-icon" href="/images/UUBSIDElogo.ico">
-    <title>UUBSIDE 2</title>
-    <link href="style.css" rel="stylesheet">
-    <script src="script.js"></script>
-  </head>
-  <body>
-		<img id="logo" width="100" height="100" src="/images/UUBSIDElogo.png"></img><br>
-		<h1 id="heading">UUBSIDE 2</h1><br>
-		<textarea id="textarea" cols="40" rows="20"></textarea><br>
-		<input id="fileNameInput" type="text"><br>
-		<button id="runButton" onclick="run()">Run</button>
-		<input type="file" id="loadFile" name="loadFile">
-		<script>
-			var textareas = document.getElementsByTagName('textarea');
-			var count = textareas.length;
-			for(var i=0;i<count;i++){
-	    textareas[i].onkeydown = function(e){
-	        if(e.keyCode==9 || e.which==9){
-	            e.preventDefault();
-	            var s = this.selectionStart;
-	            this.value = this.value.substring(0,this.selectionStart) + "\t" + this.value.substring(this.selectionEnd);
-	            this.selectionEnd = s+1; 
-	        }
-	    }
-	}
-		</script>
-  </body>
+    <head>
+        <title>HTML - Editor</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>UUBSIDE</h1>
+        <div id="container">
+            <p>Uncool Unoriginal Bland Stupid Integrated Developer Environment</p>
+            <a href="https://github.com/impozible1" target="_blank">By Impozible</a>
+        </div>
+        <textarea wrap="off" id="code" cols="80" rows="40"></textarea>
+        <iframe height="625px" width="700px" id="result" src="about:blank"></iframe>
+        <br>
+        <button onclick="showResult()">View Result</button>
+        <button onclick="showResultNew()">View Result In New Window</button>
+        <script src="script.js"></script>
+    </body>
 </html>
