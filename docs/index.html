@@ -11,7 +11,7 @@
             <p>Uncool Unoriginal Bland Stupid Integrated Developer Environment</p>
             <a href="https://github.com/impozible1" target="_blank">By Impozible</a>
         </div>
-        <textarea wrap="off" id="code" cols="80" rows="40"></textarea>
+        <textarea onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}" wrap="off" id="code" cols="80" rows="40"></textarea>
         <iframe height="640px" width="700px" id="result" src="about:blank"></iframe>
         <br>
         <button onclick="showResult()">View Result</button>
