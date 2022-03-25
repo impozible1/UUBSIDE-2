@@ -44,6 +44,7 @@ button {
     font-family: arial;
     border: solid 4px #363459;
     border-radius: 10px;
+    text-align: center;
 }
 
 #code:focus {
